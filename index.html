@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <title>food </title>
+    <style>
+        .container{
+            max-width: 1576px;
+        }
+        .ri-menu-line{
+            font-size: 25px;
+        }
+        .ri-search-line{
+            font-size: 25px;
+            padding: 0px 20px 0px 20px;
+        }
+        .btn-1{
+            border: none;
+            background-color: transparent;
+        }
+        @media(max-width:992px){
+            .navbar{
+                flex-direction: column;
+            }
+            .box1{
+                display:flex ;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+            .box{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+        }
+        .bg-gray{
+            background-color: #F8F8F8;
+        }
+        .text-lightgreen{
+            color: #6BB252;
+        }
+        .bg-lightgreen{
+            background-color: #6BB252;
+        }
+        .display-1{
+            font-weight: 500;
+        }
+        .text-gray{
+            color: #787878;
+        }
+        .fs-7{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+   <header class="border">
+        <div class="navbar navbar-expand-lg m-3">
+      
+            <div class="navbar-brand">
+               <img src="./img/logo.svg" alt="">
+                    <button data-bs-toggle="collapse" data-bs-target="#ONE" class="btn-1">
+                        <i class="ri-menu-line mx-2"></i>
+                    </button>
+            </div>
+
+            <div class="input-group d-flex justify-content-center">
+                    <div class="d-flex justify-content-center">
+                         <select class="form-select bg-gray border-0" id="basic-addon1" placeholder="all">
+                            <option value="">All Categories</option>
+                            <option value="">Groceries</option>
+                            <option value="">Drinks</option>
+                            <option value="">Chocolates</option>
+                        </select>
+                      <input type="address" class="bg-gray border-0 gap-3 px-3" placeholder="Search for more than 20,000 products" aria-describedby="basic-addon1"/>
+                    </div>
+                   <i class="ri-search-line border-0 bg-gray"></i>
+            </div>
+
+
+            <div class="box1 collapse navbar-collapse container mx-4" id="ONE">
+               <ul class="me-auto navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a href="" class="nav-link  fw-bold">HOME</a>
+                    </li>
+                    <li class="dropdown nav-item ">
+                        <a href="#" class="nav-link dropdown-toggle fw-bold" data-bs-toggle="dropdown" data-bs-auto-close="outside">PAGES</a>
+                        <ul class="dropdown-menu" >
+                            <li>
+                                <a href="#" class="dropdown-item">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">SINGLE PRODUCT </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">CART </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">CHECKOUT </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">BLOG </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">SINGLE POST </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">STYLES </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">CONTACT </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">THANK YOU </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">MY ACCOUNT</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">404 ERROR</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            
+            </div>  
+            <div class="box gap-4 px-1 d-flex ">
+                  <h4> <i class="fa-regular fa-circle-user"></i></h4>
+                   <h4> <i class="fa-regular fa-bookmark"></i></h4>
+                  <h4><i class="ri-briefcase-line"></i></h4>
+            </div>
+        </div>
+ </header>  
+ <section style="background-image:url(./img/banner-1.jpg);background-repeat: no-repeat; background-size: cover;height: 700px;"     >
+    <div class="container">
+        <div class="row">
+           <div class="col-lg-6 pt-5 mt-5">
+                <h2 class="display-1 ls-1 mb-3">
+                    <span class="fw-bold text-lightgreen"> Organic</span>
+                    Foods at your 
+                    <span class="fw-bold">Doorsteps</span>
+                </h2>
+                <p class="fs-4 text-gray">Dignissim massa diam elementum.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="btn bg-lightgreen  rounded-pill px-4 py-3 mt-3"><span class="text-uppercase text-light fs-7">Start Shopping</span></a>
+                    <a href="#" class="btn bg-dark rounded-pill px-4 py-3 mt-3"><span class="text-uppercase text-light fs-7">join now</span></a>
+                </div>
+                <div class="row my-5">
+                    <div class="col">
+                        
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+ </section>
+
+</body>
+</html>
