@@ -1,97 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="bootstrap.bundle.min.js"></script>
     <title>food </title>
     <style>
-        .container{
+        .container {
             max-width: 1576px;
         }
-        .ri-menu-line{
+
+        .ri-menu-line {
             font-size: 25px;
         }
-        .ri-search-line{
+
+        .ri-search-line {
             font-size: 25px;
             padding: 0px 20px 0px 20px;
         }
-        .btn-1{
+
+        .btn-1 {
             border: none;
             background-color: transparent;
         }
-        @media(max-width:992px){
-            .navbar{
+
+        @media(max-width:992px) {
+            .navbar {
                 flex-direction: column;
             }
-            .box1{
-                display:flex ;
+
+            .box1 {
+                display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 align-content: center;
             }
-            .box{
+
+            .box {
                 display: flex;
                 flex-wrap: wrap;
                 align-content: center;
             }
         }
-        .bg-gray{
+
+        .bg-gray {
             background-color: #F8F8F8;
         }
-        .text-lightgreen{
+
+        .text-lightgreen {
             color: #6BB252;
         }
-        .bg-lightgreen{
+
+        .bg-lightgreen {
             background-color: #6BB252;
         }
-        .display-1{
+
+        .bg-green {
+            background-color: #364127;
+        }
+
+        .bg-orange {
+            background-color: #F95F09;
+        }
+
+        .display-1 {
             font-weight: 500;
         }
-        .text-gray{
+
+        .text-gray {
             color: #787878;
         }
-        .fs-7{
+
+        .fs-7 {
             font-size: 18px;
+        }
+
+        .border-dashed {
+            border-bottom: 1px dashed #d1d1d1;
+        }
+
+        .fw-light-lg {
+            font-weight: 400;
         }
     </style>
 </head>
+
 <body>
-   <header class="border">
+    <header class="border">
         <div class="navbar navbar-expand-lg m-3">
-      
+
             <div class="navbar-brand">
-               <img src="./img/logo.svg" alt="">
-                    <button data-bs-toggle="collapse" data-bs-target="#ONE" class="btn-1">
-                        <i class="ri-menu-line mx-2"></i>
-                    </button>
+                <img src="./img/logo.svg" alt="">
+                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvas" type="button"
+                    aria-controls="offcanvasExample" class="btn-1">
+                    <i class="ri-menu-line mx-2"></i>
+                </button>
+
             </div>
 
             <div class="input-group d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                         <select class="form-select bg-gray border-0" id="basic-addon1" placeholder="all">
-                            <option value="">All Categories</option>
-                            <option value="">Groceries</option>
-                            <option value="">Drinks</option>
-                            <option value="">Chocolates</option>
-                        </select>
-                      <input type="address" class="bg-gray border-0 gap-3 px-3" placeholder="Search for more than 20,000 products" aria-describedby="basic-addon1"/>
-                    </div>
-                   <i class="ri-search-line border-0 bg-gray"></i>
+                <div class="d-flex justify-content-center">
+                    <select class="form-select bg-gray border-0" id="basic-addon1" placeholder="all">
+                        <option value="">All Categories</option>
+                        <option value="">Groceries</option>
+                        <option value="">Drinks</option>
+                        <option value="">Chocolates</option>
+                    </select>
+                    <input type="address" class="bg-gray border-0 gap-3 px-3"
+                        placeholder="Search for more than 20,000 products" aria-describedby="basic-addon1" />
+                </div>
+                <i class="ri-search-line border-0 bg-gray"></i>
             </div>
 
 
             <div class="box1 collapse navbar-collapse container mx-4" id="ONE">
-               <ul class="me-auto navbar-nav gap-3">
+                <ul class="me-auto navbar-nav gap-3">
                     <li class="nav-item">
                         <a href="" class="nav-link  fw-bold">HOME</a>
                     </li>
                     <li class="dropdown nav-item ">
-                        <a href="#" class="nav-link dropdown-toggle fw-bold" data-bs-toggle="dropdown" data-bs-auto-close="outside">PAGES</a>
-                        <ul class="dropdown-menu" >
+                        <a href="#" class="nav-link dropdown-toggle fw-bold" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">PAGES</a>
+                        <ul class="dropdown-menu">
                             <li>
                                 <a href="#" class="dropdown-item">ABOUT US</a>
                             </li>
@@ -131,38 +165,284 @@
                         </ul>
                     </li>
                 </ul>
-            
-            </div>  
+
+            </div>
             <div class="box gap-4 px-1 d-flex ">
-                  <h4> <i class="fa-regular fa-circle-user"></i></h4>
-                   <h4> <i class="fa-regular fa-bookmark"></i></h4>
-                  <h4><i class="ri-briefcase-line"></i></h4>
+                <h4> <i class="fa-regular fa-circle-user fs-4"></i></h4>
+                <h4> <i class="fa-regular fa-bookmark fs-4"></i></h4>
+                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvas2" type="button"
+                    aria-controls="offcanvasExample" class="btn-1">
+                    <h4><i class="ri-cake-3-line fs-3"></i></h4>
+                </button>
             </div>
         </div>
- </header>  
- <section style="background-image:url(./img/banner-1.jpg);background-repeat: no-repeat; background-size: cover;height: 700px;"     >
-    <div class="container">
-        <div class="row">
-           <div class="col-lg-6 pt-5 mt-5">
-                <h2 class="display-1 ls-1 mb-3">
-                    <span class="fw-bold text-lightgreen"> Organic</span>
-                    Foods at your 
-                    <span class="fw-bold">Doorsteps</span>
-                </h2>
-                <p class="fs-4 text-gray">Dignissim massa diam elementum.</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="btn bg-lightgreen  rounded-pill px-4 py-3 mt-3"><span class="text-uppercase text-light fs-7">Start Shopping</span></a>
-                    <a href="#" class="btn bg-dark rounded-pill px-4 py-3 mt-3"><span class="text-uppercase text-light fs-7">join now</span></a>
-                </div>
-                <div class="row my-5">
-                    <div class="col">
-                        
+    </header>
+    <section>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h2 class="fw-bold text-lightgreen">Your Cart</h2>
+                <button class="rounded-circle text-light" style="width: 20px;height: 20px;">3</button>
+            </div>
+        </div>
+    </section>
+    <section>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-uppercase fs-6 fw-normal" id="offcanvasExampleLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+                    <li class="nav-item border-dashed active">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/healthy-food.png" style="width: 25px;height: 25px;" alt="">
+                            <p class="h5 fw-light-lg mb-0">Fruits and vegetables</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed active">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <i class="fa-solid fa-egg fs-4"></i>
+                            <p class="h5 fw-light-lg mb-0">Dairy and Eggs</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed active">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/hen.png" style="width: 25px;height: 25px;" alt="">
+                            <p class="h5 fw-light-lg mb-0">Meat and Poultry</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed active">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/seafood.png" style="width: 25px;height: 25px;" alt="">
+                            <p class="h5 fw-light-lg mb-0">Seafood</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed active">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/bread.png" style="width: 25px;height: 25px;" alt="">
+                            <p class="h5 fw-light-lg mb-0">Bakery and Bread</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <i class="ri-shopping-bag-2-line fs-4"></i>
+                            <p class="h5 fw-light-lg mb-0">Canned Goods</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <i class="ri-fridge-line fs-4"></i>
+                            <p class="h5 fw-light-lg mb-0">Frozen Foods</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <i class="ri-bowl-line fs-4"></i>
+                            <p class="h5 fw-light-lg mb-0">Pasta and Rice</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <i class="ri-cup-line fs-4"></i>
+                            <p class="h5 fw-light-lg mb-0">Breakfast Foods</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <i class="fa-solid fa-cookie-bite fs-4"></i>
+                            <p class="h5 fw-light-lg mb-0">Snacks and Chips</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed ">
+                        <button
+                            class="btn btn-toggle dropdown-toggle position-relative w-100 d-flex justify-content-between  text-dark collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#ber" aria-expanded="true">
+                            <div class="d-flex gap-3 align-items-center">
+                                <i class="ri-drinks-2-line fs-4"></i>
+                                <p class="h5 fw-light-lg mb-0">Beverages</p>
+                            </div>
+                        </button>
+                        <div class="collapse" id="ber">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal ps-5 pb-1">
+                                <li class="border-bottom py-2">
+                                    <a href="index.html" class="dropdown-item">Water</a>
+                                </li>
+                                <li class="border-bottom py-2">
+                                    <a href="index.html" class="dropdown-item">Juice</a>
+                                </li>
+                                <li class="border-bottom py-2">
+                                    <a href="index.html" class="dropdown-item">Soda</a>
+                                </li>
+                                <li class="border-bottom py-2">
+                                    <a href="index.html" class="dropdown-item">Tea</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <i class="ri-red-packet-line fs-4"></i>
+                            <p class="h5 fw-light-lg mb-0">Spices and Seasonings</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/baby-head-with-a-small-heart-outline.png" style="width: 25px;height: 25px;"
+                                alt="">
+                            <p class="h5 fw-light-lg mb-0">Baby Food and Formula</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/healthcare.png" style="width: 25px;height: 25px;" alt="">
+                            <p class="h5 fw-light-lg mb-0">Health and Wellness</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed ">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/electric-appliances.png" style="width: 25px;height: 25px;" alt="">
+                            <p class="h5 fw-light-lg mb-0">Household Supplies</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed active">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/faucet.png" style="width: 25px;height: 25px;" alt="">
+                            <p class="h5 fw-light-lg mb-0">Personal Care</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-dashed active">
+                        <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+                            <img src="./img/pawprint.png" style="width: 25px;height: 25px;" alt="">
+                            <p class="h5 fw-light-lg mb-0">Pet Food and Supplies</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section
+        style="background-image:url(./img/banner-1.jpg);background-repeat: no-repeat; background-size: cover;width: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-5 mt-5">
+                    <h2 class="display-1 ls-1 mb-3">
+                        <span class="fw-bold text-lightgreen"> Organic</span>
+                        Foods at your
+                        <span class="fw-bold">Doorsteps</span>
+                    </h2>
+                    <p class="fs-4 text-gray">Dignissim massa diam elementum.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn bg-lightgreen  rounded-pill px-4 py-3 mt-3"><span
+                                class="text-uppercase text-light fs-7">Start
+                                Shopping</span></a>
+                        <a href="#" class="btn bg-dark rounded-pill px-4 py-3 mt-3"><span
+                                class="text-uppercase text-light fs-7">join
+                                now</span></a>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col">
+                            <div class="row text-dark">
+                                <div class="col-auto">
+                                    <p class="fs-1 fw-bold lh-sm mb-0">14k+</p>
+                                    <div class="col">
+                                        <p class="text-uppercase lh-sm mb-0">Product Varieties</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row text-dark">
+                                <div class="col-auto">
+                                    <p class="fs-1 fw-bold lh-sm mb-0">50k+</p>
+                                    <div class="col">
+                                        <p class="text-uppercase lh-sm mb-0">Happy Customers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row text-dark">
+                                <div class="col-auto">
+                                    <p class="fs-1 fw-bold lh-sm mb-0">10k+</p>
+                                    <div class="col">
+                                        <p class="text-uppercase lh-sm mb-0">Store Locations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-           </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-0 justify-content-center">
+                <div class="col">
+                    <div class="card border-0 bg-lightgreen rounded-0 p-4 text-light">
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <h2><i class="fa-solid fa-arrows-rotate text-light fs-1"></i></h2>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body p-0">
+                                    <h4 class="text-light">Fresh from farm</h4>
+                                    <p class="card-text text-light">Farm-fresh organics delivered right to your door.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="card border-0 bg-green rounded-0 p-4 text-light">
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <h2><i class="fa-brands fa-envira text-light fs-1"></i></h2>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body p-0">
+                                    <h4 class="text-light">100% Organic</h4>
+                                    <p class="card-text text-light">Freshly picked. Locally grown. Always organic.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="card border-0 bg-orange rounded-0 p-4 text-light">
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <h2><i class="ri-truck-line text-light fs-1"></i></h2>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body p-0">
+                                    <h4 class="text-light">Fresh from farm</h4>
+                                    <p class="card-text text-light">Nature's best, delivered fresh.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
- </section>
+    </section>
+    <section>
+        <div class="container my-5 border border-danger p-3">
+            <div class="row">
+                <div class="col-12 "></div>
+            </div>
+        </div>
+    </section>
+
+
+
 
 </body>
+
 </html>
