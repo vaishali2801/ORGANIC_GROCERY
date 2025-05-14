@@ -7,13 +7,37 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>food </title>
     <style>
         .container {
             max-width: 1576px;
         }
-
+         .slick-prev:before, .slick-next:before{
+            color:black  !important;
+            background-color:#F8F8F8;
+        }
+        /* .slick-prev:before{
+            position: absolute;
+            left: 1392px;
+            bottom: 105px;
+            transform: translate(298%,-221%);
+            color: black;
+            font-size: 30px;
+        }
+        .slick-next:before{
+            position: absolute;
+            left: 1392px;
+            bottom: 105px;
+            transform: translate(298%,-221%);
+            color: black;
+            font-size: 30px;
+        } */
         .ri-menu-line {
             font-size: 25px;
         }
@@ -86,6 +110,21 @@
         .fw-light-lg {
             font-weight: 400;
         }
+
+        .mt-7 {
+            margin-right: 170px;
+        }
+        .fw-1{
+            font-weight: 600;
+        }
+            .product{
+                position: relative;
+                padding: 16px;
+                background: #FFFFFF;
+                border-radius: 16px;
+                margin-bottom: 30px;
+                box-shadow: 0px 0px 22px rgba(0, 0, 0, 0);
+            }
     </style>
 </head>
 
@@ -179,17 +218,46 @@
     </header>
     <section>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
+            <div class="offcanvas-header justify-content-center mt-7">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <h2 class="fw-bold text-lightgreen">Your Cart</h2>
-                <button class="rounded-circle text-light" style="width: 20px;height: 20px;">3</button>
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-lightgreen">Your Cart</span>
+                    <span class="badge bg-lightgreen rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Growers cider</h6>
+                            <small class="text-body-secondary">Brief description</small>
+                        </div>
+                        <span class="text-body-secondary">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Fresh grapes</h6>
+                            <small class="text-body-secondary">Brief description</small>
+                        </div>
+                        <span class="text-body-secondary">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Heinz tomato ketchup</h6>
+                            <small class="text-body-secondary">Brief description</small>
+                        </div>
+                        <span class="text-body-secondary">$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (USD)</span>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+                <button class="w-100 text-light btn bg-lightgreen btn-lg" type="submit">Continue to checkout</button>
             </div>
         </div>
     </section>
     <section>
-
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title text-uppercase fs-6 fw-normal" id="offcanvasExampleLabel">Menu</h5>
@@ -326,8 +394,7 @@
             </div>
         </div>
     </section>
-    <section
-        style="background-image:url(./img/banner-1.jpg);background-repeat: no-repeat; background-size: cover;width: 100%;">
+    <section style="background-image:url(./img/banner-1.jpg);background-repeat: no-repeat; background-size: cover;width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 pt-5 mt-5">
@@ -345,35 +412,24 @@
                                 class="text-uppercase text-light fs-7">join
                                 now</span></a>
                     </div>
-                    <div class="row my-5">
-                        <div class="col">
-                            <div class="row text-dark">
-                                <div class="col-auto">
-                                    <p class="fs-1 fw-bold lh-sm mb-0">14k+</p>
-                                    <div class="col">
-                                        <p class="text-uppercase lh-sm mb-0">Product Varieties</p>
-                                    </div>
-                                </div>
+                    <div class="row my-5 text-center">
+                      
+                        <div class="col-4">
+                            <div class="d-flex flex-wrap">
+                                <p class="fs-1 fw-bold lh-sm mb-0 text-dark">14k+</p>
+                                <p class="text-uppercase lh-sm mb-0 text-dark">Product Varieties</p>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="row text-dark">
-                                <div class="col-auto">
-                                    <p class="fs-1 fw-bold lh-sm mb-0">50k+</p>
-                                    <div class="col">
-                                        <p class="text-uppercase lh-sm mb-0">Happy Customers</p>
-                                    </div>
-                                </div>
+                        <div class="col-4 ">
+                            <div class="d-flex flex-wrap">
+                                <p class="fs-1 fw-bold lh-sm mb-0 text-dark">50k+</p>
+                                <p class="text-uppercase lh-sm mb-0 text-dark">Happy Customers</p>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="row text-dark">
-                                <div class="col-auto">
-                                    <p class="fs-1 fw-bold lh-sm mb-0">10k+</p>
-                                    <div class="col">
-                                        <p class="text-uppercase lh-sm mb-0">Store Locations</p>
-                                    </div>
-                                </div>
+                        <div class="col-4 ">
+                            <div class="d-flex flex-wrap">
+                                <p class="fs-1 fw-bold lh-sm mb-0 text-dark mx-2">10k+</p>
+                                <p class="text-uppercase lh-sm mb-0 text-dark">Store Locations</p>
                             </div>
                         </div>
                     </div>
@@ -432,17 +488,154 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container my-5 border border-danger p-3">
+    <section class="py-5 overflow-hidden">
+        <div class="container">
             <div class="row">
-                <div class="col-12 "></div>
+                <div class="col-md-12">
+                    <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+                        <h2 class="section-title fs-2 fw-1">
+                            Category
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <a href="#">
+                                <button class="btn bg-lightgreen text-light me-2">View All</button>
+                            </a>
+                            <div class="buttons">
+                             <button class="btn bg-gray p-4"></button>
+                             <button class="btn bg-gray p-4"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="slider">
+                        <div class="box">
+                            <img src="./img/i1.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Fruits & Veges</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i2.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Breads & Sweets</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i3.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Fruits & Veges</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i5.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Beverages</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i6.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Meat Products</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i7.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Breads</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i8.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Fruits & Veges</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i9.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Breads & Sweets</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i9.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Fruits & Veges</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i9.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Beverages</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i9.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Meat Products</h4>
+                        </div>
+                        <div class="box">
+                            <img src="./img/i9.jpg" alt="" class="rounded-circle">
+                            <h4 class="fs-6 mt-3 fw-normal category-title mx-4">Breads</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+                        <h2 class="section-title fs-2 fw-1">
+                            Best selling products
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <a href="#">
+                                <button class="btn bg-lightgreen text-light me-2">View All</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5">
+                <div class="col">
+                   <div class="product">
+                     <div class="card" style="width: 18rem;">
+                        <img src="./img/card1.png" class="card-img-top" alt="..." style="width:158px; height: 210;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                   </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-
-
 </body>
+<script>
+
+    $('.slider').slick({
+        infinite: true,
+        speed: 500,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 700,
+        responsive: [
+            {
+                breakpoint: 1499,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+
+</script>
 
 </html>
