@@ -113,18 +113,8 @@
             margin-bottom: 30px;
             box-shadow: 0px 0px 22px rgba(0, 0, 0, 0);
         }
-           html,
     body {
       position: relative;
-      height: 100%;
-    }
-
-    body {
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
     }
 
     .swiper {
@@ -161,10 +151,13 @@
       content:""
     }
     .card:hover{
-     box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.08);
+      z-index: 1;
+      margin-bottom: -50px;
+      max-height: 500px;
+      box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.08);
     }
     .hiding_btn{
-      display:none
+      display:none;
     }
     .card:hover .hiding_btn{
       display:flex
@@ -176,5 +169,17 @@
     .ri-star-half-s-fill{
       font-size: 20px;
       color: #FFC107;
-    }
-    
+    } 
+h5 { color: #666;
+  display:inline-block; 
+  margin:0; 
+}
+h5:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #ffffff;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+h5:hover:after { transform: scaleX(1); }
+h5.fromLeft:after{  transform-origin:  0% 50%; }
