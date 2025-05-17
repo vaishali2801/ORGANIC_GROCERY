@@ -31,22 +31,20 @@
 
             </div>
 
-            <div class="input-group d-flex justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <select class="form-select bg-gray border-0" id="basic-addon1" placeholder="all">
+          <form class="col-4">
+                <div class="bg-gray d-flex jusify-content-between align-items-center rounded-3 p-2">
+                    <select class="box-w bg-gray form-select border-0">
                         <option value="">All Categories</option>
                         <option value="">Groceries</option>
                         <option value="">Drinks</option>
                         <option value="">Chocolates</option>
                     </select>
-                    <input type="address" class="bg-gray border-0 gap-3 px-3"
-                        placeholder="Search for more than 20,000 products" aria-describedby="basic-addon1" />
+                    <input type="text" name="search" placeholder="search for more than 20,000"
+                        class="boxw bg-gray ronded-3 fs-6"> <i class="bg-gray ri-search-line"></i>
                 </div>
-                <i class="ri-search-line border-0 bg-gray"></i>
-            </div>
+            </form>
 
-
-            <div class="box1 collapse navbar-collapse container mx-4" id="ONE">
+            <div class="box1 collapse navbar-collapse container mx-2" id="ONE">
                 <ul class="me-auto navbar-nav gap-3">
                     <li class="nav-item">
                         <a href="" class="nav-link  fw-bold">HOME</a>
@@ -96,12 +94,12 @@
                 </ul>
 
             </div>
-            <div class="box gap-4 px-1 d-flex ">
-                <h4> <i class="fa-regular fa-circle-user fs-4"></i></h4>
-                <h4> <i class="fa-regular fa-bookmark fs-4"></i></h4>
+            <div class="box gap-4 px-1 d-flex align-items-center">
+                <h4> <i class="fa-regular fa-circle-user fs-5 text-gray"></i></h4>
+                <h4> <i class="fa-regular fa-bookmark fs-5 text-gray"></i></h4>
                 <button data-bs-toggle="offcanvas" data-bs-target="#offcanvas2" type="button"
                     aria-controls="offcanvasExample" class="btn-1">
-                    <h4><i class="ri-cake-3-line fs-3"></i></h4>
+                    <h4><i class="ri-cake-3-line fs-4 text-gray"></i></h4>
                 </button>
             </div>
         </div>
@@ -109,7 +107,7 @@
     <!-- offcanvas right side -->
     <section>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header justify-content-center mt-7">
+            <div class="offcanvas-header justify-content-center">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -299,12 +297,10 @@
                     </h2>
                     <p class="fs-4 text-gray">Dignissim massa diam elementum.</p>
                     <div class="d-flex gap-3">
-                        <a href="#" class="btn bg-lightgreen  rounded-pill px-4 py-3 mt-3"><span
-                                class="text-uppercase text-light fs-7">Start
-                                Shopping</span></a>
-                        <a href="#" class="btn bg-dark rounded-pill px-4 py-3 mt-3"><span
-                                class="text-uppercase text-light fs-7">join
-                                now</span></a>
+                        <a href="#" class="btn-hover-2 btn bg-lightgreen  rounded-pill px-4 py-3 mt-3">
+                            <span class="text-uppercase text-light fs-7">Start Shopping</span></a>
+                        <a href="#" class="btn-hover-3 btn rounded-pill px-4 py-3 mt-3">
+                            <span class="text-uppercase text-light fs-7">join now</span></a>
                     </div>
                     <div class="row my-5 text-center">
 
@@ -387,18 +383,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+                    <div class="section-header d-flex flex-wrap justify-content-between align-items-center mb-5">
                         <h2 class="section-title fs-2 fw-1">
                             Category
                         </h2>
                         <div class="d-flex align-items-center">
                             <a href="#">
-                                <button class="btn bg-lightgreen text-light me-2">View All</button>
+                                <button class="btn-hover-2 btn bg-lightgreen text-light me-2">View All</button>
                             </a>
-                            <div class="slidebtns">
-                                <div class="swiper-button-prev bg-gray rounded-3 p-4"><i
+                            <div class="slidebtns mt-4">
+                                <div class="btn-hover-4 swiper-button-prev bg-gray rounded-3 p-4"><i
                                         class="ri-arrow-left-s-line text-dark fs-1"></i></div>
-                                <div class="swiper-button-next bg-gray rounded-3 p-4"><i
+                                <div class="btn-hover-4 swiper-button-next bg-gray rounded-3 p-4"><i
                                         class="ri-arrow-right-s-line text-dark fs-1"></i></div>
                             </div>
                         </div>
@@ -483,7 +479,7 @@
                         </h2>
                         <div class="d-flex align-items-center">
                             <a href="#">
-                                <button class="btn bg-lightgreen text-light me-2">View All</button>
+                                <button class="btn-hover-2 btn bg-lightgreen text-light me-2">View All</button>
                             </a>
                         </div>
                     </div>
@@ -529,7 +525,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card2.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 232px;height: 210px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Whole Grain Oatmeal</h3>
                                 <div>
@@ -558,7 +554,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card3.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 210px;height: 210px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Sharp Cheddar Cheese Block</h3>
                                 <div>
@@ -587,7 +583,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card4.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 180px;height: 151px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Organic Baby Spinach</h3>
                                 <div>
@@ -616,7 +612,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card5.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 191px;height: 161px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Organic Spinach Leaves (Fresh Produce)</h3>
                                 <div>
@@ -645,7 +641,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card6.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 233px;height: 210px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Fresh Salmon</h3>
                                 <div>
@@ -674,7 +670,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card7.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 214px;height: 210px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Imported Italian Spaghetti Pasta</h3>
                                 <div>
@@ -703,7 +699,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card8.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 139px;height: 210px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Granny Smith Apples</h3>
                                 <div>
@@ -732,7 +728,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card9.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 295px;height: 210px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Organic 2% Reduced Fat Milk </h3>
                                 <div>
@@ -761,7 +757,7 @@
                     <div class="col">
                         <div class="card border-0 justify-content-center" style="width: 18rem;">
                             <img src="./img/card10.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                style="width: 158px;height: 210px;">
+                                style="width: 195px;height: 210px;">
                             <div class="card-body text-center">
                                 <h3 class="card-text fs-6 fw-normal">Greek Style Plain Yogurt</h3>
                                 <div>
@@ -844,12 +840,12 @@
                         </h2>
                         <div class="d-flex align-items-center">
                             <a href="#">
-                                <button class="btn bg-lightgreen text-light me-2">View All</button>
+                                <button class="btn-hover-2 btn bg-lightgreen text-light me-2">View All</button>
                             </a>
-                            <div class="slidebtns">
-                                <div class="swiper-button-prev bg-gray rounded-3 p-4"><i
+                            <div class="slidebtns mt-4">
+                                <div class="btn-hover-4 swiper-button-prev bg-gray rounded-3 p-4"><i
                                         class="ri-arrow-left-s-line text-dark fs-1"></i></div>
-                                <div class="swiper-button-next bg-gray rounded-3 p-4"><i
+                                <div class="btn-hover-4 swiper-button-next bg-gray rounded-3 p-4"><i
                                         class="ri-arrow-right-s-line text-dark fs-1"></i></div>
                             </div>
                         </div>
@@ -864,7 +860,7 @@
             <div class="row">
                  <div class="swiper Swiper">
                 <div class="swiper-wrapper ">
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex mr-0" >
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card10.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -896,7 +892,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                        <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card11.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -927,7 +923,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card12.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -958,7 +954,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                        <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card13.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -989,7 +985,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card14.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1020,7 +1016,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex">
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card15.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1051,7 +1047,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                        <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card16.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1082,7 +1078,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card17.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1113,7 +1109,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                        <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card18.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1170,12 +1166,12 @@
                         </h2>
                         <div class="d-flex align-items-center">
                             <a href="#">
-                                <button class="btn bg-lightgreen text-light me-2">View All</button>
+                                <button class="btn-hover-2 btn bg-lightgreen text-light me-2">View All</button>
                             </a>
-                            <div class="slidebtns">
-                                <div class="swiper-button-prev bg-gray rounded-3 p-4"><i
+                            <div class="slidebtns mt-4">
+                                <div class="btn-hover-4 swiper-button-prev bg-gray rounded-3 p-4"><i
                                         class="ri-arrow-left-s-line text-dark fs-1"></i></div>
-                                <div class="swiper-button-next bg-gray rounded-3 p-4"><i
+                                <div class="btn-hover-4 swiper-button-next bg-gray rounded-3 p-4"><i
                                         class="ri-arrow-right-s-line text-dark fs-1"></i></div>
                             </div>
                         </div>
@@ -1190,7 +1186,162 @@
             <div class="row">
                  <div class="swiper Swiper">
                 <div class="swiper-wrapper ">
-                    <div class="swiper-slide d-flex flex-column">
+                      <div class="swiper-slide d-flex ">
+                        <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card15.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 216px;height: 167px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Sandwich Bread</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="swiper-slide d-flex">
+                       <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card16.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 146px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Honeycrisp Apples</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="swiper-slide d-flex">
+                        <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card17.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 137px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Whole Wheat Sandwich Bread</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex">
+                       <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card18.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 210px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Honeycrisp Apples</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex ">
+                        <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card19.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 212px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Sunstar Fresh Melon Juice</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex">
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card10.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1222,7 +1373,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex">
                        <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card11.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1253,7 +1404,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card12.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1284,7 +1435,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                        <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card13.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1315,161 +1466,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card14.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 158px;height: 210px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Fresh Green Celery</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card15.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 216px;height: 167px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Sandwich Bread</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                       <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card16.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 146px;height: 210px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Honeycrisp Apples</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card17.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 137px;height: 210px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Whole Wheat Sandwich Bread</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                       <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card18.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 210px;height: 210px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Honeycrisp Apples</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                  
+                  
+                
                    
                 </div>
 
@@ -1488,12 +1488,12 @@
                         </h2>
                         <div class="d-flex align-items-center">
                             <a href="#">
-                                <button class="btn bg-lightgreen text-light me-2">View All</button>
+                                <button class="btn-hover-2 btn bg-lightgreen text-light me-2">View All</button>
                             </a>
-                            <div class="slidebtns">
-                                <div class="swiper-button-prev bg-gray rounded-3 p-4"><i
+                            <div class="slidebtns mt-4">
+                                <div class="btn-hover-4 swiper-button-prev bg-gray rounded-3 p-4"><i
                                         class="ri-arrow-left-s-line text-dark fs-1"></i></div>
-                                <div class="swiper-button-next bg-gray rounded-3 p-4"><i
+                                <div class="btn-hover-4 swiper-button-next bg-gray rounded-3 p-4"><i
                                         class="ri-arrow-right-s-line text-dark fs-1"></i></div>
                             </div>
                         </div>
@@ -1508,7 +1508,163 @@
             <div class="row">
                  <div class="swiper Swiper">
                 <div class="swiper-wrapper ">
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
+                        <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card20.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 212px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Sunstar Fresh Melon Juice</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide d-flex ">
+                       <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card1.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 195px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Whole Wheat Sandwich Bread</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex ">
+                        <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card21.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 210px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Sunstar Fresh Melon Juice</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex ">
+                       <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card22.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 213px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Gourmet Dark Chocolate</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex ">
+                        <div class="col">
+                            <div class="card border-0 justify-content-center" style="width: 18rem;">
+                                <img src="./img/card23.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
+                                    style="width: 158px;height: 210px;">
+                                <div class="card-body text-center">
+                                    <h3 class="card-text fs-6 fw-normal">Sunstar Fresh Melon Juice</h3>
+                                    <div>
+                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                                class="ri-star-half-s-fill"></i></span>
+                                        <span class="text-gray">(222)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2 mt-1">
+                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
+                                            class="fs-6 text-dark">$8.00</strong>
+                                        <span class="py-0">
+                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="hiding_btn align-items-center gap-2">
+                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
+                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
+                                        <button class="btn btn-outline-dark btn-sm py-0"><i
+                                                class="ri-heart-line fs-5"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="swiper-slide d-flex">
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card10.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1540,7 +1696,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                        <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card11.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1571,7 +1727,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                         <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card12.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
@@ -1602,168 +1758,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-slide d-flex ">
                        <div class="col">
                             <div class="card border-0 justify-content-center" style="width: 18rem;">
                                 <img src="./img/card13.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
                                     style="width: 158px;height: 210px;">
                                 <div class="card-body text-center">
                                     <h3 class="card-text fs-6 fw-normal">Gourmet Dark Chocolate Bars</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card14.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 158px;height: 210px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Fresh Green Celery</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card15.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 216px;height: 167px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Sandwich Bread</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                       <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card16.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 146px;height: 210px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Honeycrisp Apples</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card17.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 137px;height: 210px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Whole Wheat Sandwich Bread</h3>
-                                    <div>
-                                        <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
-                                                class="ri-star-half-s-fill"></i></span>
-                                        <span class="text-gray">(222)</span>
-                                    </div>
-                                    <div class="d-flex justify-content-center gap-2 mt-1">
-                                        <p><del class="fs-6 text-gray">$11.00</del></p><strong
-                                            class="fs-6 text-dark">$8.00</strong>
-                                        <span class="py-0">
-                                            <p class="border border-secondary m-0  text-gray rounded-0 fs-6 px-2">10% off
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="hiding_btn align-items-center gap-2">
-                                        <input type="number" class="form-control form-control-sm" placeholder="1" />
-                                        <button class="btn btn-success btn-sm" style="width:400px">🛒 Add To Cart</button>
-                                        <button class="btn btn-outline-dark btn-sm py-0"><i
-                                                class="ri-heart-line fs-5"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                       <div class="col">
-                            <div class="card border-0 justify-content-center" style="width: 18rem;">
-                                <img src="./img/card18.png" class="card-img-top mx-auto mb-1 mt-2" alt="..."
-                                    style="width: 210px;height: 210px;">
-                                <div class="card-body text-center">
-                                    <h3 class="card-text fs-6 fw-normal">Honeycrisp Apples</h3>
                                     <div>
                                         <span><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
                                                 class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
@@ -1795,6 +1796,352 @@
             </div>
         </div>
     </section>
+
+    <!-- blog post -->
+    <section>
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header d-flex flex-wrap justify-content-between mb-3">
+                        <h2 class="section-title fs-2 fw-1">
+                            Our Recent Blog
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <a href="#">
+                                <button class="btn-hover-2 btn bg-lightgreen text-light me-2">View All</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card p-3 border-0 shadow-sm">
+                        <img src="./img/post1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-3">
+                            <p class="text-gray fs-8 fw-normal"><i class="ri-calendar-line fs-8 mx-1"></i>22 Aug 2021<i class="ri-folder-line fs-8 mx-1"></i> tips & tricks</p>
+                          <h3 class=" text-dark fw-bold">Top 10 casual look ideas to dress up your kids</h3>
+                          <p class="card-text lh-lg text-gray fs-6">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt consectetur adipi elit donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card p-3 border-0 shadow-sm">
+                        <img src="./img/post2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-3">
+                            <p class="text-gray fs-8 fw-normal"><i class="ri-calendar-line fs-8 mx-1"></i>22 Aug 2021<i class="ri-folder-line fs-8 mx-1"></i> tips & tricks</p>
+                          <h3 class=" text-dark fw-bold">Latest trends of wearing street wears supremely</h3>
+                          <p class="card-text lh-lg text-gray fs-6">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt consectetur adipi elit donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card p-3 border-0 shadow-sm">
+                        <img src="./img/post3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-3">
+                            <p class="text-gray fs-8 fw-normal"><i class="ri-calendar-line fs-8 mx-1"></i>22 Aug 2021<i class="ri-folder-line fs-8 mx-1"></i> tips & tricks</p>
+                          <h3 class=" text-dark fw-bold">Top 10 casual look ideas to dress up your kids</h3>
+                          <p class="card-text lh-lg text-gray fs-6">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec consectetur adipi quam. A in arcu, neque dolor morbi...</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- download card -->
+    <section>
+        <div class="container pt-5 pb-4">
+            <div class="row">
+                <div class="bg-warning pt-5 rounded-5">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-md-4">
+                                <h2 class="mt-5 fw-bold">Download Organic App</h2>
+                                <p class="text-gray fs-6">Online Orders made easy, fast and reliable</p>
+                                <div class="d-flex gap-2 flex-wrap mb-5">
+                                    <a href="#">
+                                        <img src="./img/app.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/play.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <img src="./img/banner-3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- looking for -->
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header mb-3">
+                        <h2 class="section-title fs-2 fw-1 my-4">
+                            People are also looking for
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4">
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Blue diamon almonds</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Angie’s Boomchickapop Corn  </a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Salty kettle Corn</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Chobani Greek Yogurt</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Sweet Vanilla Yogurt</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Foster Farms Takeout Crispy wings</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Warrior Blend Organic</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Chao Cheese Creamy</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Chicken meatballs</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Blue diamon almonds</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Angie’s Boomchickapop Corn</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Salty kettle Corn</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Chobani Greek Yogurt</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Sweet Vanilla Yogurt</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Foster Farms Takeout Crispy wings</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Warrior Blend Organics</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Chao Cheese Creamy</a>
+                <a href="#" class="btn-hover btn bg-lightorange me-2 mb-2 fs-6 text-gray">Chicken meatballs</a>
+            </div>
+        </div>
+    </section>
+    <!-- box5 -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5">
+                <div class="col">
+                    <div class="card mb-3 border border-dark-subtle p-3 shadow-none">
+                        <div class="rounded-circle border border-secondary mb-3" style="width: 35px;height: 35px;">
+                            <img src="./img/model.png" style="width: 32px;height: 32px;">
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="fs-5 fw-bold text-dark mb-2">Free delivery</h5>
+                            <div class="card-text">
+                                <p class="text-gray fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 border border-dark-subtle p-3 shadow-none" >
+                        <div class="rounded-circle border border-secondary mb-3" style="width: 35px;height: 35px;">
+                            <i class="ri-shopping-bag-4-line fs-4 text-gray px-1"></i>
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="fs-5 fw-bold text-dark mb-2">100% secure payment</h5>
+                            <div class="card-text">
+                                <p class="text-gray fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 border border-dark-subtle p-3 shadow-none">
+                        <div class="rounded-circle border border-secondary mb-3" style="width: 35px;height: 35px;">
+                            <i class="ri-shield-check-line fs-4 text-gray px-1"></i>
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="fs-5 fw-bold text-dark mb-2">Quality guarantee</h5>
+                            <div class="card-text">
+                                <p class="text-gray fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 border border-dark-subtle p-3 shadow-none">
+                        <div class="rounded-circle border border-secondary mb-3" style="width: 35px;height: 35px;">
+                            <i class="ri-checkbox-circle-line fs-4 text-gray px-1"></i>
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="fs-5 fw-bold text-dark mb-2">guaranteed savings</h5>
+                            <div class="card-text">
+                                <p class="text-gray fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 border border-dark-subtle p-3 shadow-none">
+                        <div class="rounded-circle border border-secondary mb-3" style="width: 35px;height: 35px;">
+                            <i class="ri-gift-2-line fs-4 text-gray px-1"></i>
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="fs-5 fw-bold text-dark mb-2">Daily offers</h5>
+                            <div class="card-text">
+                                <p class="text-gray fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer">
+                        <img src="./img/logo.svg" alt="">
+                    </div>
+                    <div class="media mt-3">
+                        <ul class="d-flex list-unstyled gap-2">
+                            <li>
+                                <a href="#" class="btn-2 btn btn-outline-gray">
+                                    <i class="ri-facebook-fill fs-6 text-gray"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-2 btn btn-outline-gray">
+                                    <i class="ri-twitter-line fs-6 text-gray"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-2 btn btn-outline-gray">
+                                    <i class="ri-youtube-fill fs-6 text-gray"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-2 btn btn-outline-gray">
+                                    <i class="ri-instagram-line fs-6 text-gray"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-2 btn btn-outline-gray">
+                                    <i class="ri-amazon-fill fs-6 text-gray"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="footer">
+                        <h5 class="title text-dark pb-2 fw-bold">Organic</h5>
+                        <ul class="menu-list list-unstyled">
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">About us</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Conditions </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Our Journals</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Careers</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Affiliate Programme</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Ultras Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="footer">
+                        <h5 class="title text-dark pb-2 fw-bold">Quick Links</h5>
+                        <ul class="menu-list list-unstyled">
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Offers</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Discount Coupons</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Stores</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Track Order</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Shop</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Info</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="footer">
+                        <h5 class="title text-dark pb-2 fw-bold">Customer Service</h5>
+                        <ul class="menu-list list-unstyled">
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">FAQ</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Contact</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Privacy Policy</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Returns & Refunds</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Cookie Guidelines</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="nav-link text-gray fs-9 pb-2">Delivery Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer">
+                        <h5 class="title text-dark pb-2 fw-bold">Subscribe Us</h5>
+                        <p class="text-gray fs-9 lh-lg">Subscribe to our newsletter to get updates about our grand offers.</p>
+                        <div class="d-flex">
+                            <input type="email" placeholder="Email Address" class="border-0 bg-gray fs-6 p-2">
+                            <div class="btn btn-hover-3 fs-6 text-light">subscribe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- copyright -->
+     <section>
+        <div class="container">
+            <div class="row">
+               
+                    <div class="col-12 col-md-6">
+                        <p class="text-gray fs-6">© 2024 Organic. All rights reserved.</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-start text-md-end">
+                        <p class="text-gray fs-6">
+                            HTML Template by 
+                            <a href="https://templatesjungle.com/" class="text-dark">TemplatesJungle</a>
+                            Distributed By 
+                            <a href="https://themewagon.com" class="text-dark">ThemeWagon</a>
+                        </p>
+                        
+
+                    </div>
+              
+            </div>
+        </div>
+    </section>
+
 </body>
 <script>
 

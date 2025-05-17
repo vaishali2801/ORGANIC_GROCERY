@@ -1,6 +1,6 @@
 .container {
-            max-width: 1576px;
-        }
+      max-width: 1576px;
+   }
 
         .slick-prev:before,
         .slick-next:before {
@@ -8,36 +8,46 @@
             background-color: #F8F8F8;
         }
 
-        /* .slick-prev:before{
-            position: absolute;
-            left: 1392px;
-            bottom: 105px;
-            transform: translate(298%,-221%);
-            color: black;
-            font-size: 30px;
-        }
-        .slick-next:before{
-            position: absolute;
-            left: 1392px;
-            bottom: 105px;
-            transform: translate(298%,-221%);
-            color: black;
-            font-size: 30px;
-        } */
         .ri-menu-line {
             font-size: 25px;
         }
 
         .ri-search-line {
             font-size: 25px;
-            padding: 0px 20px 0px 20px;
+            margin-left: 10px;
+        }
+        .fa-regular:hover{
+          color: #000000;
         }
 
+        .boxw {
+            border:none;
+        }
+        .bg-gray{
+            background-color:#F8F8F8;
+        }
         .btn-1 {
             border: none;
             background-color: transparent;
         }
-
+        .ri-cake-3-line:hover{
+          color: #000000;
+        }
+        .box-w{
+          width: 30%;
+        }
+        .btn-hover-2:hover {
+          background-color: #F7A422;
+        }
+        .btn-hover-3{
+          background-color: #000000;
+        }
+        .btn-hover-3:hover{
+          background-color: #424649;
+        }
+        .btn-hover-4:hover{
+          background-color: #6BB252;
+        }
         @media(max-width:992px) {
             .navbar {
                 flex-direction: column;
@@ -97,10 +107,6 @@
             font-weight: 400;
         }
 
-        .mt-7 {
-            margin-right: 170px;
-        }
-
         .fw-1 {
             font-weight: 600;
         }
@@ -142,7 +148,6 @@
     }
     .slidebtns div{
       position:static;
-      margin:10px
     }
     .swiper-button-prev::after{
       content:"";
@@ -183,3 +188,25 @@ h5:after {
 }
 h5:hover:after { transform: scaleX(1); }
 h5.fromLeft:after{  transform-origin:  0% 50%; }
+
+.fs-8{
+    font-size: 13px;
+}
+.bg-lightorange{
+    background-color: #fff8e9;
+}
+.btn-hover:hover{
+    background-color: #FFECBE;
+}
+.shadow-none{
+    box-shadow: none;
+}
+.btn-outline-gray{
+    border:1px solid #EFEFEF; 
+}
+.btn-2:hover{
+    background-color: #EFEFEF;
+}
+.fs-9{
+    font-size: 16px;
+}
