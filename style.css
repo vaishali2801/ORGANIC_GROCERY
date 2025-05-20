@@ -26,6 +26,7 @@
         }
         .btn-1 {
             border: none;
+            padding: 0px;
             background-color: transparent;
         }
         .ri-cake-3-line:hover{
